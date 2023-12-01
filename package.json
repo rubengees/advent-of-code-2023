@@ -1,0 +1,31 @@
+{
+  "name": "advent-of-code-2023",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "bun --watch test",
+    "start": "bun src/index.ts run",
+    "check": "tsc",
+    "lint": "eslint .",
+    "lint:style": "prettier --check .",
+    "verify": "bun check && bun test && bun lint && bun lint:style",
+    "new": "bun src/index.ts new"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "endent": "^2.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "bun-types": "latest",
+    "eslint": "^8.54.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
