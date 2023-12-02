@@ -31,6 +31,8 @@ const runCommand = new Command("run")
       for (let i = 1; i <= 25; i++) {
         if (await fs.exists(`./src/day${i}`)) {
           totalTime += await runDay(i)
+
+          console.log()
         }
       }
 
@@ -54,7 +56,7 @@ async function runDay(day: number) {
     throw new Error(`Could not read input for day ${day}`, { cause: e })
   }
 
-  console.log(`Starting day ${day}`)
+  console.log(`Running day ${day}...`)
 
   const startTime1 = performance.now()
   program.part1(input)
