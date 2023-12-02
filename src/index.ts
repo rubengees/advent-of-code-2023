@@ -93,7 +93,7 @@ const newCommand = new Command("new")
         import { part1, part2 } from "./index.ts"
         
         describe("day ${day}", () => {
-          test("part 1 example", () => {
+          test.todo("part 1 example", () => {
             const example = endent\`
               
             \`
@@ -103,13 +103,13 @@ const newCommand = new Command("new")
             expect(result).toEqual("")
           })
         
-          test("part 1 input", async () => {
+          test.todo("part 1 input", async () => {
             const result = part1((await readFile("src/day${day}/input.txt")).toString())
         
             expect(result).toEqual("")
           })
         
-          test("part 2 example", () => {
+          test.todo("part 2 example", () => {
             const example = endent\`
               
             \`
@@ -119,7 +119,7 @@ const newCommand = new Command("new")
             expect(result).toEqual("")
           })
         
-          test("part 2 input", async () => {
+          test.todo("part 2 input", async () => {
             const result = part2((await readFile("src/day${day}/input.txt")).toString())
         
             expect(result).toEqual("")
