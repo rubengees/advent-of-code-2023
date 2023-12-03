@@ -19,9 +19,7 @@ function parseLine(line: string): Game {
 }
 
 function isValid(game: Game): boolean {
-  return game.cubes.every(
-    (cubes) => (cubes["red"] ?? 0) <= 12 && (cubes["green"] ?? 0) <= 13 && (cubes["blue"] ?? 0) <= 14
-  )
+  return game.cubes.every((cubes) => (cubes.red ?? 0) <= 12 && (cubes.green ?? 0) <= 13 && (cubes.blue ?? 0) <= 14)
 }
 
 export function part1(input: string): string {

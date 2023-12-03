@@ -19,4 +19,4 @@ jobs:
       - name: Install
         run: bun install --frozen-lockfile
       - name: Verify
-        run: bun verify
+        run: bun ci

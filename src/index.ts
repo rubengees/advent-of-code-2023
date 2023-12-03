@@ -13,7 +13,9 @@ function parseDay(day: string): string {
 
   if (!Number.isInteger(parsed)) {
     throw new InvalidArgumentError("Must be a number")
-  } else if (parsed < 1 || parsed > 25) {
+  }
+
+  if (parsed < 1 || parsed > 25) {
     throw new InvalidArgumentError("Must be a number between 1 and 25")
   }
 
