@@ -35,19 +35,23 @@ describe("day 7", () => {
     expect(result).toEqual("247815719")
   })
 
-  test.todo("part 2 example", () => {
+  test("part 2 example", () => {
     const example = endent`
-      
+      32T3K 765
+      T55J5 684
+      KK677 28
+      KTJJT 220
+      QQQJA 483
     `
 
     const result = part2(example)
 
-    expect(result).toEqual("")
+    expect(result).toEqual("5905")
   })
 
-  test.todo("part 2 input", async () => {
+  test("part 2 input", async () => {
     const result = part2((await readFile("src/day7/input.txt")).toString())
 
-    expect(result).toEqual("")
+    expect(result).toEqual("248747492")
   })
 })
